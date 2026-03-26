@@ -8,10 +8,10 @@ class Solution {
                 if(nums[i]==nums[j]){
                     count++;
                 }
-                if(count>maxCount){
-                    maxCount=count;
-                    val=nums[i];
-                }
+            }
+            if(count>maxCount){
+                maxCount=count;
+                val=nums[i];
             }
             if(maxCount>(nums.length)/2) return val;    
         }
