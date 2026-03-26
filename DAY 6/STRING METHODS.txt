@@ -1,0 +1,66 @@
+STRING METHODS:
+
+1. charAt() - The charAt() method in java is used to identify the character present in a particular index. The indexing in Strings begin with 0, so for charAt(i), i starts from 0 to n-1 where n is the length of the string.
+
+Syntax:
+str.charAt(index);
+
+Example:
+String str="computer";
+char ch=str.chartAt(4); //u
+
+2. length() - The length() method is returns an integer that specifies the length of the string. The length of an empty string is 0.
+
+Syntax:
+str.length();
+
+Example:
+String str="hello"
+int len=str.length(); //5
+
+3. toLowerCase() - the toLowerCase() method in java is used to convert all the characters present in a given string to lowercase letters.
+
+Syntax:
+str.toLowerCase();
+
+Example:
+String str="HELLO WORLD"
+str.toLowerCase(); //hello world
+
+4. toUpperCase() - The toUpperCase() method converts all the characters present in a string to uppercase letters.
+
+Syntax:
+str.toUpperCase();
+
+Example:
+String str="hello wOrld"
+str.toUpperCase(); \\HELLO WORLD
+
+5. split() - The split() method splits a given string into an array of strings based on a delimiter or an expression given as an argument in the split() method.
+
+Syntax:
+String[] arr= str.split(String expression,int limit);
+
+Example:
+String str="Hello World";
+String[] arr=str.split(" "); //{"Hello","World"}
+
+6. replace() - The replace() methods returns a new string after replacing the characters present in the string with given characters.
+
+Syntax:
+str.replace(old_chars,new_chars);
+
+Example:
+String str="Hello World";
+str=str.replace('l','p'); //"Heppo Worpd"
+
+7. substring() - The substring() method returns a substring from the given string. This method can take the start value and end value as arguments. If no parameter given, the substring will end at the end of the string.
+
+Syntax:
+str.substring(start_index,end_index);
+
+Note: The start_index must be specified, but not necessary to specify the end_index.
+
+Example:
+String str="Hello World";
+String s=str.substring(2,8); //"llo Wo"
